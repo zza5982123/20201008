@@ -9,16 +9,20 @@
   </head>
 
   <body>
-    <div data-role="page">
-      <div data-role="header">
+    <div data-role="page" id="coffeemenu">
+      <div data-role="header" data-position="fixed" data-theme="b">
         <h1>coffee</h1>
+        <a
+          href="index.html" rel="external"
+          class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-back"
+          >Back</a>
       </div>
       <!-- /header -->
 
       <div role="main" class="ui-content" style="text-align: center">
         <ul data-role="listview" data-inset="true">
           <li>
-            <a href="#">
+            <a href="#Broken">
               <img src="./coffee/coffee.png" />
               <span
                 class="ui-li-count"
@@ -80,13 +84,36 @@
           </li>
         </ul>
       </div>
-      <!-- /content -->
-
+     
       <div data-role="footer">
         <h4>Page Footer</h4>
       </div>
       <!-- /footer -->
     </div>
     <!-- /toast page -->
+     <!-- /content -->
+     <div data-role="page" id="Broken">
+      <div data-role="header" data-position="fixed" data-theme="b">
+        <h1>hamburger</h1>
+        <a
+          href="#coffeemenu"
+          class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-back"
+          >Back</a
+        >
+      </div>
+      <!-- /header -->
+
+      <div role="main" class="ui-content" style="text-align: center">
+        <img src="./images/hamburger.png" width="70%" />
+
+        <p><a href="#coffeemenu">Back to menu</a></p>
+      </div>
+      <!-- /content -->
+
+      <div data-role="footer" data-position="fixed">
+        <h4>Page Footer</h4>
+      </div>
+      <!-- /footer -->
+    </div>
   </body>
 </html>
